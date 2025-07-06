@@ -1,0 +1,26 @@
+:root {
+  --bg-color: #0a031bd7;
+  --green1: #39da99;
+  --green2: #31e69d;
+  --green-shadow-1: rgba(58, 218, 153, 0.5);
+  --green-shadow-2: rgba(58, 218, 153, 0.4);
+  --green-shadow-3: rgba(58, 218, 153, 0.3);
+  --green-shadow-4: rgba(58, 218, 153, 0.2);
+  --green-shadow-5: rgba(58, 218, 153, 0.1);
+  --pink-text: #fe84ff;
+  --pink-border: #a740a3;
+  --btn-bg: #31e69d;
+  --btn-hover-bg: #6a34ff;
+  --btn-text: #16063d;
+  --btn-hover-shadow: rgb(49, 230, 157);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Bitcount Grid Double", system-ui;
+  min-height: 100vh;
+}
