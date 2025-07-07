@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 :root {
+  --font-identity: "Bitcount Grid Double", system-ui; /* varsayılan logindeki. */
+  --font-content: "Press Start 2P", monospace; /* navbar - footer - postlar - yorumlarda kullanılacak olan  */
+
   --bg-color: #0a031bd7;
   --green1: #39da99;
   --green2: #31e69d;
@@ -13,14 +18,17 @@
   --btn-hover-bg: #6a34ff;
   --btn-text: #16063d;
   --btn-hover-shadow: rgb(49, 230, 157);
+  --navbar-backgrond: rgba(15, 5, 34, 0.902);
 }
 
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+
 }
 
 body {
-  font-family: "Bitcount Grid Double", system-ui;
-  min-height: 100vh;
+  font-family: var(--font-identity); 
+  background-color: var(--bg-color);
+
 }

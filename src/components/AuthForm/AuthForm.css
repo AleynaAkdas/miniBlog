@@ -1,8 +1,11 @@
-body {
+.auth-form-wrapper {
   background-image: url(/src/assets/img/bg-pixelart.gif);
   display: flex;
   justify-content: center;
   align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
 }
 
 .login-container {
@@ -88,96 +91,49 @@ form {
   font-size: 18px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 600px) {
   .login-container {
-    margin: 80px auto;
-    width: 90%;
-    padding: 15px;
+    margin: 10px 30px;
+    max-width: 90%;
+    padding: 12px;
     box-shadow: var(--green-shadow-1) 3px 3px, var(--green-shadow-2) 6px 6px,
       var(--green-shadow-3) 9px 9px, var(--green-shadow-4) 12px 12px,
       var(--green-shadow-5) 15px 15px;
   }
 
   h2 {
-    font-size: 20px;
-    padding: 10px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
   }
+
   form {
-    padding: 15px;
+    padding: 10px 0px;
   }
 
   .form-group {
     font-size: 16px;
-    width: 100%;
-    padding: 10px;
+    padding: 8px;
+    gap: 4px;
   }
 
   .form-group input {
     height: 18px;
-    padding: 6px;
+    padding: 5px;
+    font-size: 14px;
   }
 
   .buttons {
-    width: 100%;
     flex-direction: column;
     align-items: center;
   }
 
   .btn {
     width: 100%;
-    font-size: 15px;
-    letter-spacing: 1px;
-  }
-
-  .eye-icon {
-    right: 15px;
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .login-container {
-    margin: 50px auto;
-    width: 95%;
-    padding: 12px;
-    box-shadow: var(--green-shadow-1) 3px 3px, var(--green-shadow-2) 6px 6px,
-      var(--green-shadow-3) 9px 9px, var(--green-shadow-4) 12px 12px;
-  }
-
-  h2 {
-    font-size: 18px;
-    letter-spacing: 1px;
-  }
-
-  form {
-    padding: 10px;
-  }
-
-  .form-group {
     font-size: 14px;
     padding: 8px;
   }
 
-  .form-group input {
-    height: 16px;
-    padding: 5px;
-  }
-
-  .btn {
-    font-size: 14px;
-  }
-
   .eye-icon {
-    right: 10px;
+    right: 20px;
     font-size: 14px;
-  }
-}
-
-@media (min-width: 1921px) {
-  body {
-    background-color: var(--bg-color);
-    background-repeat: no-repeat;
-    background-position: center; 
   }
 }

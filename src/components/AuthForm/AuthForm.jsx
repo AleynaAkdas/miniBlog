@@ -6,9 +6,13 @@ import './AuthForm.css';
 export default function AuthForm() {
   const [isRegister, setIsRegister] = useState(true);
 
-  return isRegister ? (
-    <RegisterForm onSwitch={() => setIsRegister(false)} />
-  ) : (
-    <LoginForm onSwitch={() => setIsRegister(true)} />
+  return (
+    <div className="auth-form-wrapper">
+      {isRegister ? (
+        <RegisterForm onSwitch={() => setIsRegister(false)} />
+      ) : (
+        <LoginForm onSwitch={() => setIsRegister(true)} />
+      )}
+    </div>
   );
 }

@@ -1,0 +1,93 @@
+.mystica-navbar {
+  font-family: var(--font-content);
+  background-color: var(--navbar-backgrond);
+  color: #fceaff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px;
+  position: sticky;
+  border-bottom: 2px solid #6c3cc9;
+  box-shadow: 0 0 12px #472061;
+}
+
+.logo a {
+  color: #f6aaff;
+  text-shadow: 0 0 6px #b372ff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: transform 0.2s ease;
+}
+
+.logo a:hover {
+  transform: scale(1.05);
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  color: #fceaff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #dab6ff;
+  font-size: 12px;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #ff79c6;
+}
+
+.active a {
+  border-bottom: 2px dotted #ff91fa;
+  padding-bottom: 2px;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  color: #dab6ff;
+  font-size: 12px;
+  font-family: "Press Start 2P", monospace;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logout-btn:hover {
+  color: white;
+  text-shadow: 0 0 5px #ff79c6;
+}
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(20, 8, 40, 0.95);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 16px;
+    border-radius: 10px;
+    gap: 12px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}

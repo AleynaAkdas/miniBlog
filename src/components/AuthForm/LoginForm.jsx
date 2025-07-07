@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 
@@ -9,6 +10,7 @@ export default function LoginForm({ onSwitch }) {
   });
 
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate(); 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,6 +27,9 @@ export default function LoginForm({ onSwitch }) {
       formData.password === savedUser.password
     ) {
       alert(`Hoş geldin, ${savedUser.username}!`);
+      localStorage.setItem("token", "fake-token");
+      localStorage.setItem("user", JSON.stringify(savedUser)); 
+      navigate("/"); 
     } else {
       alert("Giriş başarısız. Bilgileri kontrol et.");
     }
@@ -36,7 +41,6 @@ export default function LoginForm({ onSwitch }) {
     <div className="login-container">
       <h2>GİRİŞ FORMU</h2>
       <form onSubmit={handleSubmit} autoComplete="off">
-        {/* Tarayıcıyı kandırmak için sahte inputlar */}
         <input
           type="text"
           name="fakeusernameremembered"
