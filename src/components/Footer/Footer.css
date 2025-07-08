@@ -1,0 +1,52 @@
+.mystica-footer {
+  background-color: var(--navbar-backgrond);
+  color: #dab6ff;
+  padding: 24px;
+  border-top: 2px solid #6c3cc9;
+  box-shadow: 0 -4px 12px #6c3cc94d;
+  font-family: var(--font-content);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px dashed #43286c;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+
+.footer-logo {
+  font-size: 14px;
+  color: #f6aaff;
+  text-shadow: 0 0 6px #a940ff;
+  font-family: "Press Start 2P", monospace;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #b782ff;
+  font-size: 12px;
+  transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: white;
+  text-shadow: 0 0 6px #ff7dff;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 10px;
+  color: #9c72c5;
+  opacity: 0.8;
+}

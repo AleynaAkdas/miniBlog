@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 :root {
   --font-identity: "Bitcount Grid Double", system-ui; /* varsayılan logindeki. */
@@ -24,11 +24,9 @@
 * {
   margin: 0;
   padding: 0;
-
 }
 
 body {
-  font-family: var(--font-identity); 
+  font-family: var(--font-identity);
   background-color: var(--bg-color);
-
 }
